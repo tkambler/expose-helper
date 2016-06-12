@@ -8,6 +8,8 @@ photo's text will be displayed.
 
 The resulting metadata can be saved to the appropriate location by choosing File -> Save Metadata.
 
+![Example Video](https://github.com/tkambler/expose-helper/raw/master/misc/expose-helper.gif)
+
 ## Getting Started
 
 A build process that compiles the application into a finished OS X / Windows binary has not yet been put in place - that will be done shortly. In the meantime, the application can be launched from the terminal. You'll
