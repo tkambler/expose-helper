@@ -1,0 +1,26 @@
+.brush .extent {
+    stroke: #000;
+    stroke-width: 1.5px;
+    fill: #000;
+    fill-opacity: 0.3;
+}
+
+.voronoi {
+    fill: steelblue;
+    fill-opacity: 0.4;
+    stroke: steelblue;
+    stroke-opacity: 0.5;
+}
+
+.voronoi.selected {
+    fill: red;
+    fill-opacity: 0.4;
+    stroke: darkred;
+    stroke-opacity: 0.5;
+}
+
+.point.selected {
+    fill: red;
+    stroke: darkred;
+    stroke-width: 1;
+}

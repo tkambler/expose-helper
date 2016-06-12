@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Expose Helper</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='polybrush.css'>
+    <link rel='stylesheet' href='./node_modules/bootstrap/dist/css/bootstrap.css'>
+</head>
+<body class="lasso-container">
+
+    <div class="panel panel-default inspector noselect">
+        <div class="panel-heading noselect">
+            <h3 class="panel-title">Inspector</h3>
+        </div>
+        <div class="panel-body">
+            <form>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="form-group last">
+                            <label for="image-text">Image Text</label>
+                            <textarea class="form-control" rows="3" name="image-text" id="image-text"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="container" class="noselect"></div>
+
+</body>
+
+<script>
+let $ = window.jQuery = require('jquery');
+require('jquery-ui/draggable');
+</script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script>
+require('./lasso.js')
+</script>
+</html>
