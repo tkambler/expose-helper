@@ -11,22 +11,6 @@ const template = [
         'label': 'File',
         'submenu': [
             {
-                'label': 'Set Text',
-                'click': (item, focusedWindow) => {
-                    dialog.showMessageBox({
-                        'type': 'question',
-                        'buttons': ['Cancel', 'OK'],
-                        'title': 'Title',
-                        'defaultId': 0,
-                        'message': 'Message here.',
-                        'detail': 'Details here.',
-                        'cancelId': 0
-                    }, (buttonId) => {
-
-                    });
-                }
-            },
-            {
                 'label': 'Save Metadata',
                 'click': (item, focusedWindow) => {
                     console.log('metadata', data.metadata);
@@ -80,34 +64,6 @@ const template = [
     ]
   },
   {
-    label: 'View',
-    submenu: [
-      {
-        label: 'Reload',
-        accelerator: 'CmdOrCtrl+R',
-        click(item, focusedWindow) {
-          if (focusedWindow) focusedWindow.reload();
-        }
-      },
-      {
-        label: 'Toggle Full Screen',
-        accelerator: process.platform === 'darwin' ? 'Ctrl+Command+F' : 'F11',
-        click(item, focusedWindow) {
-          if (focusedWindow)
-            focusedWindow.setFullScreen(!focusedWindow.isFullScreen());
-        }
-      },
-      {
-        label: 'Toggle Developer Tools',
-        accelerator: process.platform === 'darwin' ? 'Alt+Command+I' : 'Ctrl+Shift+I',
-        click(item, focusedWindow) {
-          if (focusedWindow)
-            focusedWindow.webContents.toggleDevTools();
-        }
-      },
-    ]
-  },
-  {
     label: 'Window',
     role: 'window',
     submenu: [
@@ -122,17 +78,7 @@ const template = [
         role: 'close'
       },
     ]
-  },
-  {
-    label: 'Help',
-    role: 'help',
-    submenu: [
-      {
-        label: 'Learn More',
-        click() { require('electron').shell.openExternal('http://electron.atom.io'); }
-      },
-    ]
-  },
+  }
 ];
 
 if (process.platform === 'darwin') {
