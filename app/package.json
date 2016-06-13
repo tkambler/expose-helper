@@ -1,7 +1,8 @@
 {
-  "name": "electron-quick-start",
+  "name": "expose-helper",
+  "productName": "ExposeHelper",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Helper application for the Expose photo-essay static site generator",
   "main": "lib/main/index.js",
   "scripts": {
     "start": "electron lib/main/index.js"
